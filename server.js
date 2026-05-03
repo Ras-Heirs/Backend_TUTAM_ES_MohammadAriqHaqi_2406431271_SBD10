@@ -8,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
+app.get('/', (req, res) => {
+  res.json({ message: "⚡ Backend RikuuNotes is Running on Vercel!" });
+});
 app.use(express.json());
 
 app.use('/notes', noteRoutes);
