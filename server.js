@@ -16,3 +16,5 @@ app.use('/auth', authRoutes);
 app.listen(PORT, () => {
   console.log(`🚀 Backend berjalan di port ${PORT}`);
 });
+
+module.exports = app;
